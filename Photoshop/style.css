@@ -1,0 +1,117 @@
+*{
+            margin:0px;
+            box-sizing:border-box
+}
+body{
+            background-color:white;
+}
+.main-page{
+            height:100vh;
+            display:flex;
+}
+.side-line{
+            background-color: #f13939;
+            height:100%;
+            width:25px;
+}
+.side-bar{
+            background-color:  #d6c2c2;
+            height:100%;
+            width:15%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            box-shadow: 1px 1px 10px rgb(185,185,185)
+}
+.circle{
+            width:75px;
+            height: 75px;
+            background-color:#ffffffa0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:50%
+
+}
+.circle:hover{
+            background-color:  #e78787;
+}
+.circle:active{
+            background-color:  #f13939;
+}
+.blue-circle{
+            background-color:#f13939 ;
+}
+.right-panel{
+            display:flex;
+            flex-direction: column;
+            height:100%;
+            width:100%
+}
+.header{
+            background-color:#f13939 ;
+            width:100%;
+            height:75px;
+            display:flex;
+            justify-content: center;
+            box-shadow: 1px 1px 10px rgb(185,185,185)
+}
+h1{
+            padding-top: 20px;;
+            color:white;
+            font-size:1.5rem;
+            letter-spacing: 0.2rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tablet-container{
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+}
+#tablet-image {
+            position:absolute;
+            max-width: 100%;
+            height: auto;
+}
+
+#main-canvas {
+            width: 95%;
+            height: auto;
+            position:absolute;
+            z-index: -1;
+}
+
+@media only screen and (min-width: 108px) {
+#tablet-image {
+            width: 80%;
+            height: auto;
+}
+
+#main-canvas {
+            width: 75%;
+            height: auto;
+            max-width: 960px;
+            max-height: 720px;
+}
+}  
+
+@media only screen and (max-width: 767px) {
+            .circle {
+                font-size: 18px;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        
+        @media only screen and (max-width: 479px) {
+            .circle {
+                font-size: 14px;
+                width: 50px;
+                height: 50px;
+            }
+        }
